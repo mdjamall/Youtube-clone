@@ -1,5 +1,5 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLogoYoutube } from "react-icons/io";
 import { TfiSearch } from "react-icons/tfi";
 import { FaMicrophone } from "react-icons/fa";
@@ -8,35 +8,35 @@ import { FaBell } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center px-14 h-14 bg-[#212121] opacity-95 sticky text-white">
+    <div className="flex justify-between items-center lg:px-6 px-8 h-14 bg-[#212121] opacity-95 sticky ">
       <div className="flex gap-8 items-center ">
         <div className="">
-          <GiHamburgerMenu size={25} />
+          <RxHamburgerMenu size={22} />
         </div>
-        <div className="flex gap-2  items-center ">
+        <div className="flex gap-1  items-center ">
           <IoLogoYoutube className=" text-[#f00] " size={30} />
           <span className="text-xl font-semibold mb-1">Youtube</span>
         </div>
       </div>
       <div className="flex  justify-center items-center gap-5">
-        <form>
-          <div className=" flex items-center bg-zinc-900 px-4 h-10 rounded-3xl">
-            <div className="flex gap-5 items-center pr-5">
+        <form className="">
+          <div className=" flex items-center border border-[#474747] bg-zinc-900  px-4 h-10 pr-0 rounded-3xl">
+            <div className="flex gap-5   items-center pr-5">
               <input
                 type="
                 text"
                 placeholder="Search"
-                className="lg:w-[30rem] bg-zinc-900 focus:outline-none border-none"
+                className="lg:w-[30rem] w-32  bg-zinc-900 focus:outline-none border-none"
               />
             </div>
-            <button className=" ">
+            <button className="h-10 w-14 flex items-center justify-center bg-[#474747] hover:bg-[#424242] rounded-r-full ">
               <TfiSearch size={20} className="  " />
             </button>
           </div>
         </form>
 
-        <div className="p-3 bg-[#474747] rounded-full">
-          <FaMicrophone size={20} />
+        <div className="p-3 cursor-pointer hover:bg-[#424242] bg-[#474747] rounded-full">
+          <FaMicrophone size={18} />
         </div>
       </div>
       <div className="flex justify-between items-center gap-7">
